@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Slider</title>
+	<style type="text/css">
+		img {
+			transition: 0.5s;
+		}
+	</style>
+	<script type="text/javascript">
+		var i = 0;
+		var slider = Array();
+		slider[0] = "images/1.jpg";
+		slider[1] = "images/2.jpg";
+		slider[2] = "images/3.jpg";
+		slider[3] = "images/4.jpg";
+		slider[4] = "images/5.jpg";
+		slider[5] = "images/6.jpg";
+		slider[6] = "images/7.jpg";
+		function sliderimages() {
+			document.getElementById('img').src = slider[i];
+			if (i < 6) {
+				i++;
+			}
+			else {
+				i = 0;
+			}
+		}
+		setInterval(sliderimages, 1000);
+	</script>
+</head>
+
+<body onload="sliderimages()">
+	<img src="images/1.jpg" width="700" height="400" id="img">
+</body>
+
+</html>

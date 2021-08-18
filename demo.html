@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JS</title>
+</head>
+
+<body>
+	<input type="button" name="" id="hide" value="hide">
+	<input type="button" name="" id="show" value="show">
+	<input type="button" name="" id="side" value="Slide">
+	<input type="button" name="" id="down" value="Down">
+
+	<input type="button" name="" id="toggle" value="Hide/Show">
+
+	<input type="button" name="" id="fadeout" value="Fade Out">
+	<input type="button" name="" id="fadein" value="Fade In">
+	<input type="button" name="" id="fadetoggle" value="Fade Toggle">
+	<div id="data">
+		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, qui necessitatibus iure, minus quos ducimus,
+		reiciendis repellat porro possimus aspernatur explicabo odio quo voluptate facilis excepturi velit soluta
+		consectetur accusantium nostrum. Reiciendis repellendus architecto distinctio animi ad voluptatibus atque,
+		expedita aperiam deserunt dolorum, soluta illo, voluptatum officiis quia id quo eos maiores sed aliquid culpa!
+		Quasi commodi voluptatibus deleniti nobis voluptas ipsam est dolor, praesentium reiciendis vel temporibus
+		incidunt quibusdam et quae aut tempore nam maiores. Quas sit harum laborum, quia maxime recusandae doloribus
+		voluptatum corrupti vitae, aliquid nostrum praesentium odio deserunt vel aspernatur optio sequi ut voluptatibus
+		beatae iusto autem. Sint, aspernatur commodi? Ea consectetur perspiciatis labore repellat doloribus at maiores
+		possimus eaque tempora, obcaecati quis quaerat non quisquam voluptatibus excepturi tempore, dolor illum nobis
+		amet. Soluta ab voluptatum numquam quis ullam totam alias sint porro odio quas. Nam accusantium alias fugiat
+		aliquam quidem. Perferendis nihil sed tenetur iusto ex placeat error, officiis enim ad est nobis eius vero
+		dolore modi molestias soluta ipsam vitae obcaecati quas libero rem! Mollitia officiis in tenetur delectus illo
+		necessitatibus voluptate rerum error eius. Fugit esse et ipsum odio nobis? Delectus praesentium mollitia
+		ducimus, exercitationem, est illo officiis fugit, iure maiores quas aliquid.
+	</div>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function () {
+			$("#hide").click(function () {
+
+
+				$("#data").hide(5000);
+
+
+
+			});
+
+
+			$("#show").click(function () {
+
+
+				$("#data").show(5000);
+
+
+
+			});
+
+			$("#side").click(function () {
+
+
+				$("#data").slideUp();
+
+
+
+			});
+
+			$("#down").click(function () {
+
+
+				$("#data").slideDown();
+
+
+
+			});
+
+
+			$("#toggle").click(function () {
+
+
+				$("#data").slideToggle();
+
+
+
+			});
+
+
+			$("#fadeout").click(function () {
+
+
+				$("#data").fadeOut(2000);
+
+
+
+			});
+
+			$("#fadein").click(function () {
+
+
+				$("#data").fadeIn(2000);
+
+
+
+			});
+
+			$("#fadetoggle").click(function () {
+
+
+				$("#data").fadeToggle(2000);
+
+
+
+			});
+
+
+
+
+
+		});
+
+	</script>
+</body>
+
+</html>
