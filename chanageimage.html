@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>change</title>
+		<style type="text/css">
+			img {
+				transition: 0.5s;
+			}
 
-<head>
-    <title>change</title>
-    <style type="text/css">
-        img {
-            transition: 0.5s;
-        }
-        
-        .div {
-            width: 400px;
-            height: 400px;
-            overflow: hidden;
-        }
-        
-        .div img {
-            width: 400px;
-            height: 400px;
-        }
-    </style>
-    <script type="text/javascript">
-        function changeimages() {
-            document.getElementById('change').src = "images/2.jpg";
-        }
+			.div {
+				width: 400px;
+				height: 400px;
+				overflow: hidden;
+			}
 
-        function changeimages1() {
-            document.getElementById('change').src = "images/3.jpg";
-        }
-    </script>
-</head>
+			.div img {
+				width: 400px;
+				height: 400px;
+			}
+		</style>
+		<script type="text/javascript">
+			function changeimages() {
+				document.getElementById("change").src = "images/2.jpg";
+			}
 
-<body>
-    <div class="div">
-        <img src="images/1.jpg" width="400px" height="300px" id="change" onmouseover="changeimages()" onmouseout="changeimages1()">
-    </div>
-</body>
+			function changeimages1() {
+				document.getElementById("change").src = "images/3.jpg";
+			}
+		</script>
+	</head>
 
+	<body>
+		<div class="div">
+			<img
+				src="images/1.jpg"
+				width="400px"
+				height="300px"
+				id="change"
+				onmouseover="changeimages()"
+				onmouseout="changeimages1()"
+			/>
+		</div>
+	</body>
 </html>

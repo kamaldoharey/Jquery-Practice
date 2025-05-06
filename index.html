@@ -1,75 +1,100 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>website</title>
+		<style type="text/css">
+			.img1 {
+				width: 500px;
+				height: 500px;
+			}
 
-<head>
-	<title>website</title>
-	<style type="text/css">
-		.img1 {
-			width: 500px;
-			height: 500px;
-		}
+			.img2 {
+				width: 150px;
+				height: 150px;
+				float: left;
+			}
 
-		.img2 {
-			width: 150px;
-			height: 150px;
-			float: left;
+			.img3 {
+				width: 150px;
+				height: 150px;
+				float: left;
+			}
 
-		}
+			.img4 {
+				width: 150px;
+				height: 150px;
+				float: left;
+			}
 
-		.img3 {
-			width: 150px;
-			height: 150px;
-			float: left;
+			.img5 {
+				width: 150px;
+				height: 150px;
+				float: left;
+			}
+		</style>
+		<script type="text/javascript">
+			function changeimages(a, b) {}
+			function changeimages1(image) {
+				document.getElementById("change").src = image;
+			}
+			// function changeimages2() {
+			// 	document.getElementById('change').src="images/3.jpg";
+			// }
+			// function changeimages3() {
+			// 	document.getElementById('change').src="images/4.jpg";
+			// }
+			// function changeimages4() {
+			// 	document.getElementById('change').src="images/6.jpg";
+			// }
+		</script>
+	</head>
 
-		}
-
-		.img4 {
-			width: 150px;
-			height: 150px;
-			float: left;
-
-		}
-
-		.img5 {
-			width: 150px;
-			height: 150px;
-			float: left;
-
-		}
-	</style>
-	<script type="text/javascript">
-		function changeimages(a, b) {
-
-		}
-		function changeimages1(image) {
-
-			document.getElementById('change').src = image;
-		}
-		// function changeimages2() {
-		// 	document.getElementById('change').src="images/3.jpg";
-		// }
-		// function changeimages3() {
-		// 	document.getElementById('change').src="images/4.jpg";
-		// }
-		// function changeimages4() {
-		// 	document.getElementById('change').src="images/6.jpg";
-		// }
-	</script>
-</head>
-
-<body>
-	<input type="button" value="Save" onclick="changeimages(10,20); ">
-	<div class="img1">
-		<img src="images/1.jpg" width="500px" height="500px" id="change" onclick="changeimages(50,60)">
-	</div>
-	<div class="img2"><img src="images/2.jpg" width="150px" height="150px" id="change"
-			onclick="changeimages1('images/2.jpg')"></div>
-	<div class="img3"><img src="images/3.jpg" width="150px" height="150px" id="change"
-			onclick="changeimages1('images/3.jpg')"></div>
-	<div class="img4"><img src="images/4.jpg" width="150px" height="150px" id="change"
-			onclick="changeimages1('images/4.jpg')"></div>
-	<div class="img5"><img src="images/6.jpg" width="150px" height="150px" id="change"
-			onclick="changeimages1('images/6.jpg')"></div>
-</body>
-
+	<body>
+		<input type="button" value="Save" onclick="changeimages(10,20); " />
+		<div class="img1">
+			<img
+				src="images/1.jpg"
+				width="500px"
+				height="500px"
+				id="change"
+				onclick="changeimages(50,60)"
+			/>
+		</div>
+		<div class="img2">
+			<img
+				src="images/2.jpg"
+				width="150px"
+				height="150px"
+				id="change"
+				onclick="changeimages1('images/2.jpg')"
+			/>
+		</div>
+		<div class="img3">
+			<img
+				src="images/3.jpg"
+				width="150px"
+				height="150px"
+				id="change"
+				onclick="changeimages1('images/3.jpg')"
+			/>
+		</div>
+		<div class="img4">
+			<img
+				src="images/4.jpg"
+				width="150px"
+				height="150px"
+				id="change"
+				onclick="changeimages1('images/4.jpg')"
+			/>
+		</div>
+		<div class="img5">
+			<img
+				src="images/6.jpg"
+				width="150px"
+				height="150px"
+				id="change"
+				onclick="changeimages1('images/6.jpg')"
+			/>
+		</div>
+	</body>
 </html>
