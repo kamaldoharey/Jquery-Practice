@@ -38,39 +38,43 @@
 			esse et ipsum odio nobis? Delectus praesentium mollitia ducimus,
 			exercitationem, est illo officiis fugit, iure maiores quas aliquid.
 		</div>
-		<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.js"
+			integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+			crossorigin="anonymous"
+		></script>
 		<script type="text/javascript">
 			$(document).ready(function () {
-				$("#hide").click(function () {
-					$("#data").hide(5000);
+				$('#hide').click(function () {
+					$('#data').hide(5000);
 				});
 
-				$("#show").click(function () {
-					$("#data").show(5000);
+				$('#show').click(function () {
+					$('#data').show(5000);
 				});
 
-				$("#side").click(function () {
-					$("#data").slideUp();
+				$('#side').click(function () {
+					$('#data').slideUp();
 				});
 
-				$("#down").click(function () {
-					$("#data").slideDown();
+				$('#down').click(function () {
+					$('#data').slideDown();
 				});
 
-				$("#toggle").click(function () {
-					$("#data").slideToggle();
+				$('#toggle').click(function () {
+					$('#data').slideToggle();
 				});
 
-				$("#fadeout").click(function () {
-					$("#data").fadeOut(2000);
+				$('#fadeout').click(function () {
+					$('#data').fadeOut(2000);
 				});
 
-				$("#fadein").click(function () {
-					$("#data").fadeIn(2000);
+				$('#fadein').click(function () {
+					$('#data').fadeIn(2000);
 				});
 
-				$("#fadetoggle").click(function () {
-					$("#data").fadeToggle(2000);
+				$('#fadetoggle').click(function () {
+					$('#data').fadeToggle(2000);
 				});
 			});
 		</script>
