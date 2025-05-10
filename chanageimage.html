@@ -17,13 +17,21 @@
 				width: 400px;
 				height: 400px;
 			}
+
+			#change {
+				width: 400px;
+				height: 400px;
+				object-fit: cover;
+				transition: opacity 3000ms ease;
+			}
 		</style>
+
 		<script type="text/javascript">
-			function changeimages() {
+			function changeImages() {
 				document.getElementById('change').src = 'images/2.jpg';
 			}
 
-			function changeimages1() {
+			function changeImages1() {
 				document.getElementById('change').src = 'images/3.jpg';
 			}
 		</script>
@@ -33,11 +41,9 @@
 		<div class="div">
 			<img
 				src="images/1.jpg"
-				width="400px"
-				height="300px"
 				id="change"
-				onmouseover="changeimages()"
-				onmouseout="changeimages1()"
+				onmouseover="changeImages()"
+				onmouseout="changeImages1()"
 			/>
 		</div>
 	</body>
