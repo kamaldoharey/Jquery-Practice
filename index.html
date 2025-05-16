@@ -10,16 +10,16 @@
 				aspect-ratio: 4/3;
 				outline: 1px solid black;
 				padding: 0.5rem;
+				border-radius: 1rem;
 			}
 
 			.other__image img {
 				width: 100px;
 				object-fit: cover;
 				outline: 1px solid black;
-				margin: 5px;
-				border: 3px solid yellow;
 				padding: 0.5rem;
 				aspect-ratio: 4/3;
+				border-radius: 1rem;
 			}
 
 			.other__image {
@@ -30,6 +30,7 @@
 				display: grid;
 				justify-content: center;
 				align-items: center;
+				font-family: 'Courier New', Courier, monospace;
 			}
 		</style>
 
@@ -41,11 +42,13 @@
 	</head>
 
 	<body>
+		<h1>Main image</h1>
 		<section class="main__image">
 			<div>
 				<img src="images/1.jpg" id="change" onclick="changeimages(50,60)" />
 			</div>
 		</section>
+		<h1>Other images</h1>
 		<section class="other__image">
 			<div>
 				<img
